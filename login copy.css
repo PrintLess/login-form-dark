@@ -95,6 +95,27 @@ body{
     padding-top: 15px;
     margin-left: 30px;
     transition: 0.2s;
+    pointer-events: none;
+}
+label input:valid ~.titulo{
+    transform: translateY(-26px);
+    background-color: #161717;
+    color: #EA4C89 ;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.90rem;
+    /* text-transform: uppercase;     */
+}
+label input:focus ~.titulo{
+    transform: translateY(-26px);
+    background-color:#b63566 ;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.90rem;
+    /* text-transform: uppercase;     */
 }
 
 form{
@@ -112,24 +133,30 @@ label{
 }
 .section-inputs label input{
     width: 80%;
-    background-color: #212121;
+    /* background-color: #212121; */
     border: none;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     outline: none;
     font-size: 14pt;
+    background-color: #161717;
+    border-bottom: solid 1px #8b8b8b;
+
+    
 }
 
 label input{
     width: 90%;
-    background-color: #212121;
+    /* background-color: #212121; */
     border: none;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     outline: none;
     font-size: 14pt;
     transition: box-shadow 0.4s, border 0.4s;
     color: white;
+    background-color: #161717;
+    border-bottom: solid 1px #8b8b8b;
 }
 label span {
     font-weight: 700;
@@ -139,15 +166,21 @@ label input:hover{
     border: solid 1px #f3f3f4;
     box-shadow: 0 0 4px #a59fa3;
 }
+label input:hover ~.titulo{
+    transform: translateY(-26px);
+    background-color:#b63566 ;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.90rem;
+    /* text-transform: uppercase;     */
+}
 label input:focus{
     /* background-color: white; */
     background-color: #161717;
     border: solid 1px #f3f3f4;
-    box-shadow: 0 0 4px #f37dcc;
-}
-label input:focus ~.titulo{
-    transform: translateY(-26px);
-    background-color: #161717;
+    box-shadow: 0 0 4px #f37dccb9;
 }
 .label-checkbox{
     display: flex;
